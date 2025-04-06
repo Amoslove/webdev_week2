@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>week two assignment</title>
+  </head>
+  <body>
+    <h1>Welcome to my week two Webpage</h1>
+
+    <!-- Audio Section -->
+    <section>
+      <h2>Listen to this audio</h2>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+      <h2>Watch this video</h2>
+      <iframe  width="320" height="240" src="https://www.youtube.com/watch?si=KcLyuSyr_SFzYtG7&v=dL-6SAZDksE&feature=youtu.be" frameborder="0"></iframe>
+      <!-- <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> -->
+    </section>  
+
+    <!-- Registration Form with Validation -->
+    <section>
+      <h2>Register Here</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+
+    <!-- Embedded Image -->
+    <section>
+      <h2>Our Logo</h2>
+      <img src="logo.png" alt="Website Logo" width="200" />
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Price Table</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Cake</td>
+          <td>N1000</td>
+        </tr>
+        <tr>
+          <td>Cookie</td>
+          <td>N500</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- List Section -->
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom Cake Design</li>
+        <li>Home Delivery</li>
+        <li>Online Ordering</li>
+      </ul>
+    </section>
+
+    <h1>Welcome to My Webpage</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+      <h2>My Top 5 Goals</h2>
+      <ol type="I">
+        <li>Learn Web Development</li>
+        <li>Build a Portfolio</li>
+        <li>Contribute to Open Source</li>
+        <li>Get an Internship</li>
+        <li>Launch My Startup</li>
+      </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+      <h2>Inspiration Image</h2>
+      <img
+        src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg"
+        alt="Inspiring Workspace"
+        width="500"
+      />
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+      <h2>Contact List</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Blessing</td>
+          <td>abuja, nigeria</td>
+          <td>+234 701144531</td>
+          <td>Blessing@example.com</td>
+        </tr>
+        <tr>
+          <td>Amos loveine</td>
+          <td>acra ghana</td>
+          <td>+233 555 123 4567</td>
+          <td>amose@example.com</td>
+        </tr>
+        <tr>
+          <td>joe besong</td>
+          <td>boki nigeria</td>
+          <td>+234 7022222</td>
+          <td>joe@example.com</td>
+        </tr>
+        <tr>
+          <td>patience kongo</td>
+          <td>boki naigeria</td>
+          <td>+234 70987543</td>
+          <td>patience@example.com</td>
+        </tr>
+        <tr>
+          <td>ehi cowesho</td>
+          <td>benue nigeria</td>
+          <td>+234 80333333</td>
+          <td>eh@example.com</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form>
+        <!-- Name -->
+        <label for="name">Full Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        /><br /><br />
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        /><br /><br />
+
+        <!-- Password -->
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Minimum 6 characters"
+          minlength="6"
+          required
+        /><br /><br />
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label><br />
+        <select id="country" name="country" required>
+          <option value="">-- Select Country --</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="uk">United Kingdom</option>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option></select
+        ><br /><br />
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br /><br />
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br />
+        <input type="checkbox" id="coding" name="interests" value="coding" />
+        <label for="coding">Coding</label><br />
+
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label><br />
+
+        <input type="checkbox" id="travel" name="interests" value="travel" />
+        <label for="travel">Travel</label><br /><br />
+
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+  </body>
+</html>
